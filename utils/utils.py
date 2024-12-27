@@ -18,5 +18,8 @@ def init_page():
         except Exception as e:
             print(f"命令執行失敗：\n{e}")
 
-    st.set_page_config(page_title="Dino's website", page_icon="🦖", layout="wide")
+    st.set_page_config(
+        page_title="Dino's website", page_icon="images/tyrannosaurus.png", layout="wide"
+    )
+    st.logo("images/tyrannosaurus.png")
     menu()
